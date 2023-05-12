@@ -17,6 +17,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: rgb(196, 205, 218);
+  color: black;
 }
 
 header {
@@ -60,6 +61,7 @@ main {
 
 section {
   margin-bottom: 20px;
+   /* box-shadow: 0 0 20px green; */
 }
 
 h2 {
@@ -88,6 +90,14 @@ form textarea {
 
 form input[type="submit"] {
   background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button{
+  background-color:green;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -131,7 +141,7 @@ form input[type="submit"] {
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
         
-        <input type="submit" value="Submit">
+        <button class="button" id="Submit" onclick="Submitted()">Submit</button>
       </form>
     </section>
   </main>
@@ -139,5 +149,10 @@ form input[type="submit"] {
   <footer>
     <p>&copy; 2023 Vision Optics. All rights reserved.</p>
   </footer>
+  <script>
+    function Submitted(){
+      alert("Successfully Submitted")
+    }
+  </script>
 </body>
 </html>
